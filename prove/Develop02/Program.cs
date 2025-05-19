@@ -14,8 +14,6 @@ namespace JournalApp
             while (running)
             {
                 DisplayMenu();
-
-                // Get user input and trim whitespace
                 string choice = Console.ReadLine()?.Trim();
 
                 switch (choice)

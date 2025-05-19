@@ -1,8 +1,5 @@
 namespace JournalApp
 {
-    /// <summary>
-    /// Represents a single journal entry with a date, prompt, and response.
-    /// </summary>
     public class JournalEntry
     {
         private string Date { get; }

@@ -4,11 +4,10 @@ using System.Collections.Generic;
 public class PromptGenerator
 {
     private List<string> _promptList;
-    private static Random _random = new Random(); // Static Random instance for better performance
-
+    private static Random _random = new Random(); 
     public PromptGenerator()
     {
-        // Initialize the list of prompts
+      
         _promptList = new List<string>
         {
             "Who was the most interesting person I interacted with today?",
@@ -18,10 +17,10 @@ public class PromptGenerator
         };
     }
 
-    // Method to get a random prompt from the list
+    
     public string GetRandomPrompt()
     {
-        int index = _random.Next(_promptList.Count); // Generate a random index
-        return _promptList[index]; // Return the prompt at the random index
+        int index = _random.Next(_promptList.Count); 
+        return _promptList[index];
     }
 }
