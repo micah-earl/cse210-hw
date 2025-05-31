@@ -17,8 +17,7 @@ class Program
             Console.Write("Enter number: ");
             userNumber = int.Parse(Console.ReadLine());
 
-            if (userNumber != 0) // Don't add the final 0 to the list
-            {
+            if (userNumber != 0) 
                 numbers.Add(userNumber);
             }
         }
@@ -36,13 +35,13 @@ class Program
         float average = ((float)sum) / numbers.Count;
         Console.WriteLine($"The average is: {average}");
 
-        int max = numbers[0]; // Start by assuming the first number is the biggest
+        int max = numbers[0]; 
 
         foreach (int number in numbers)
         {
             if (number > max)
             {
-                max = number; // Found a new bigger number
+                max = number; 
             }
         }
         
